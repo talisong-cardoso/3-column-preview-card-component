@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-orange: hsl(31, 77%, 52%);
+  --color-cyan: hsl(184, 100%, 22%);
+  --color-dark-cyan: hsl(179, 100%, 13%);
+  --color-text: hsla(0, 0%, 100%, 0.75);
+  --neutral-light-gray: hsl(0, 0%, 95%);
+}
+
+html {
+  font-size: 93.8%;
+}
+
+body {
+  user-select: none;
+  font-family: 'Lexend Deca', sans-serif;
+  background: var(--neutral-light-gray);
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.container {
+  border-radius: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: auto;
+  width: min(90%, 100%);
+  margin-block: 4rem;
+}
+
+h1 {
+  position: absolute;
+  visibility: hidden;
+}
+
+.card {
+  padding: 3rem;
+  width: 100%;
+}
+
+.card-sedans {
+  background-color: var(--color-orange);
+}
+
+.card-suvs {
+  background-color: var(--color-cyan);
+}
+
+.card-luxury {
+  background-color: var(--color-dark-cyan);
+}
+
+.card__icon {
+  margin-bottom: 2rem;
+}
+
+.card__title {
+  color: var(--neutral-light-gray);
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.66rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.card__description {
+  color: var(--color-text);
+  line-height: 1.65rem;
+  margin-bottom: 4rem;
+}
+
+.card__button {
+  background-color: var(--neutral-light-gray);
+  border: 3px solid var(--neutral-light-gray);
+  border-radius: 2rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 12px 30px;
+  transition: 200ms linear background;
+}
+
+.card-sedans .card__button {
+  color: var(--color-orange);
+}
+
+.card-suvs .card__button {
+  color: var(--color-cyan);
+}
+
+.card-luxury .card__button {
+  color: var(--color-dark-cyan);
+}
+
+.card__button:hover {
+  background-color: transparent;
+  color: var(--neutral-light-gray);
+}
+

@@ -1,0 +1,26 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: min(95%, 100%);
+  }
+
+  .card-sedans,
+  .card-suvs {
+    width: 50%;
+  }
+
+  .card-luxury {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .container {
+    width: min(100%, 900px);
+  }
+
+  .card-sedans,
+  .card-suvs,
+  .card-luxury {
+    width: 33.33333%;
+  }
+}
